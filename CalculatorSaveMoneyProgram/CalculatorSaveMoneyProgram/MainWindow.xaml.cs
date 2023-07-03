@@ -24,5 +24,11 @@ namespace CalculatorSaveMoneyProgram
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            System.Media.SoundPlayer coinSoundPlayer = new System.Media.SoundPlayer(@"C:\Users\User\Desktop\git\HW_ProC_Shape_BornToDev\CalculatorSaveMoneyProgram\CalculatorSaveMoneyProgram\asset\collectCoin.wav");
+            coinSoundPlayer.Play();
+        }
     }
 }

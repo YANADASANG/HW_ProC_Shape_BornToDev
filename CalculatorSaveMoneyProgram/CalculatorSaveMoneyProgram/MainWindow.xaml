@@ -7,6 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="169,97,0,0" TextWrapping="Wrap" Text="รายได้" VerticalAlignment="Top" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Margin="169,147,0,0" TextWrapping="Wrap" Text="รายจ่าย" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="txtIncome" HorizontalAlignment="Left" Margin="262,106,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="284" Height="23" FontSize="16"/>
+        <TextBox x:Name="txtExpenses" HorizontalAlignment="Left" Margin="262,154,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="284" Height="23" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="564,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24"><Run Language="th-th" Text="บาท/วัน"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="564,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24"><Run Language="th-th" Text="บาท/วัน"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="169,0,0,0" TextWrapping="Wrap" Text="ราคาของที่อยากได้" VerticalAlignment="Center" FontSize="24"/>
+        <TextBox x:Name="txtExpenses_Copy" HorizontalAlignment="Left" Margin="352,211,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="230" Height="23" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="599,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="24" Text="บาท"/>
+        <Button Content="คำนวณ" HorizontalAlignment="Left" Margin="169,256,0,0" VerticalAlignment="Top" Height="42" Width="80" FontWeight="Bold" FontSize="16" Background="#FFEABB2F" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="265,258,0,0" TextWrapping="Wrap" Text="คุณต้องเก็บเงินทั้งหมด" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="txtDaySave" HorizontalAlignment="Left" Margin="474,269,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="108" Height="23" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="599,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Text="บาท"/>
+        <Image HorizontalAlignment="Left" Height="430" VerticalAlignment="Top" Width="792" OpacityMask="#FFE81C1C" Source="/coinBG.jpg" Panel.ZIndex="-2" Margin="42,4,0,0"/>
+        <Rectangle HorizontalAlignment="Left" Height="434" Stroke="Black" VerticalAlignment="Center" Width="849" Fill="#FFD9EBF5" Panel.ZIndex="-3"/>
+        <Rectangle HorizontalAlignment="Left" Height="234" Margin="142,87,0,0" VerticalAlignment="Top" Width="525" Panel.ZIndex="-1" Fill="#CCFFFFFF"/>
 
     </Grid>
 </Window>
